@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  快递单号：<input placeholder="请输入运单号" bindinput="input"/>
+  <button type="primary" bindtap="btnClick" > 查询 </button>
+<!--211261058305// 518334310905-->
+
+  <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100% ">
+    <view wx:for="{{expressInfo.data}}" class="kdjv" >
+        {{item.context}} 
+    </view>
+  </scroll-view>
+</view>
